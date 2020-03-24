@@ -49,7 +49,7 @@ def register_blueprints(app):
     app.register_blueprint(todo_bp)
     app.register_blueprint(home_bp)
     app.register_blueprint(api_v1, url_prefix='/api/v1')
-    # app.register_blueprint(api_v1, url_prefix='/v1', subdomain='api')  # enable subdomain support
+    app.register_blueprint(api_v1, url_prefix='/v1', subdomain='api')  # enable subdomain support
 
 
 def register_template_context(app):
