@@ -12,7 +12,7 @@ basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 class BaseConfig:
     TODOISM_LOCALES = ['en_US', 'zh_Hans_CN']
-    TODOISM_ITEM_PER_PAGE = 20
+    TODOISM_ITEM_PER_PAGE = 5
 
     BABEL_DEFAULT_LOCALE = TODOISM_LOCALES[0]
 
